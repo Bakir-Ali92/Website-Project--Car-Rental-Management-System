@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en" class="h-full">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AusDrive — Car Rental Australia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="./styles.css" rel="stylesheet">
+    <meta name="color-scheme" content="light">
+  </head>
+  <body class="h-full bg-zinc-50 text-zinc-900 antialiased">
+    <header class="sticky top-0 z-40 bg-white/80 backdrop-blur border-b border-zinc-200">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-14 flex items-center justify-between">
+        <a href="#" class="inline-flex items-center gap-2 font-semibold tracking-tight">
+          <span class="inline-block h-2 w-2 rounded-full bg-sky-700"></span>
+          <span>AusDrive</span>
+        </a>
+        <nav aria-label="Primary" class="hidden md:flex items-center gap-6 text-sm">
+          <a href="#rent" class="text-zinc-700 hover:text-sky-800 transition-colors">Rent</a>
+          <a href="#admin" class="text-zinc-700 hover:text-sky-800 transition-colors">Admin</a>
+          <a href="#benefits" class="text-zinc-700 hover:text-sky-800 transition-colors">Benefits</a>
+          <a href="#contact" class="text-zinc-700 hover:text-sky-800 transition-colors">Contact</a>
+        </nav>
+        <div class="flex items-center gap-2">
+          <a href="#rent" class="inline-flex items-center justify-center rounded-md bg-sky-800 px-4 py-2 text-white text-sm font-medium shadow-sm hover:bg-sky-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-500 focus-visible:ring-offset-2 transition-colors">Rent a car</a>
+          <a href="#admin" class="hidden sm:inline-flex items-center justify-center rounded-md border border-zinc-300 bg-white px-4 py-2 text-sm font-medium text-zinc-900 shadow-sm hover:bg-zinc-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-500 focus-visible:ring-offset-2 transition">Admin</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="relative overflow-hidden bg-white">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
+          <div class="grid lg:grid-cols-2 gap-10 items-center">
+            <div class="space-y-6 reveal">
+              <h1 class="text-3xl sm:text-4xl lg:text-5xl font-semibold leading-tight text-balance">
+                Rent a car anywhere in Australia with confidence
+              </h1>
+              <p class="text-zinc-600 max-w-prose">
+                Flexible options, transparent pricing, and nationwide coverage for your next journey.
+              </p>
+              <div class="flex flex-wrap gap-3">
+                <a href="#rent" class="inline-flex items-center rounded-md bg-sky-800 px-5 py-2.5 text-white font-medium shadow-sm hover:bg-sky-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-500 focus-visible:ring-offset-2 transition">
+                  Start renting
+                </a>
+                <a href="#admin" class="inline-flex items-center rounded-md border border-zinc-300 bg-white px-5 py-2.5 text-zinc-900 font-medium shadow-sm hover:bg-zinc-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-500 focus-visible:ring-offset-2 transition">
+                  Admin portal
+                </a>
+              </div>
+
+              <form id="rent" class="w-full max-w-2xl rounded-xl border border-zinc-200 bg-white/80 backdrop-blur p-4 sm:p-5 shadow-sm space-y-3 reveal-delayed" action="#" method="get">
+                <div class="grid sm:grid-cols-3 gap-3">
+                  <div class="flex flex-col gap-1">
+                    <label for="location" class="text-sm text-zinc-700">Pick-up location</label>
+                    <input id="location" name="location" type="text" placeholder="Sydney, Melbourne..." class="h-11 rounded-md border border-zinc-300 bg-white px-3 text-zinc-900 placeholder-zinc-400 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500">
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <label for="from" class="text-sm text-zinc-700">From</label>
+                    <input id="from" name="from" type="date" class="h-11 rounded-md border border-zinc-300 bg-white px-3 text-zinc-900 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500">
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <label for="to" class="text-sm text-zinc-700">To</label>
+                    <input id="to" name="to" type="date" class="h-11 rounded-md border border-zinc-300 bg-white px-3 text-zinc-900 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:border-sky-500">
+                  </div>
+                </div>
+                <div class="flex items-center justify-end">
+                  <button type="submit" class="inline-flex items-center rounded-md bg-sky-800 px-4 py-2 text-white font-medium shadow-sm hover:bg-sky-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-500 focus-visible:ring-offset-2 transition">
+                    Search cars
+                  </button>
+                </div>
+              </form>
+            </div>
+
+            <div class="relative reveal">
+              <div class="aspect-[4/3] w-full rounded-2xl bg-gradient-to-br from-zinc-100 to-zinc-200 shadow-inner"></div>
+              <div class="absolute -bottom-6 -right-4 bg-white border border-zinc-200 shadow-md rounded-xl p-4 w-[78%] sm:w-[60%]">
+                <p class="text-sm text-zinc-600">Popular today</p>
+                <div class="mt-2 grid grid-cols-3 gap-2">
+                  <div class="h-14 rounded-md bg-zinc-100"></div>
+                  <div class="h-14 rounded-md bg-zinc-100"></div>
+                  <div class="h-14 rounded-md bg-zinc-100"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="portals" class="bg-zinc-50 py-14 sm:py-16">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="grid md:grid-cols-2 gap-6">
+            <a href="#rent" class="group block rounded-2xl border border-zinc-200 bg-white p-6 sm:p-8 shadow-sm transition hover:shadow-md hover:-translate-y-0.5 reveal">
+              <div class="flex items-center justify-between">
+                <h2 class="text-xl sm:text-2xl font-semibold">Rent a car</h2>
+                <span class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-sky-800 text-white">→</span>
+              </div>
+              <p class="mt-2 text-zinc-600">Find cars across Australia with flexible pick-up and drop-off options.</p>
+              <div class="mt-4 inline-flex items-center text-sky-800 font-medium">Browse cars<span class="ml-1 transition-transform group-hover:translate-x-0.5">→</span></div>
+            </a>
+
+            <a id="admin" href="#admin-dashboard" class="group block rounded-2xl border border-zinc-200 bg-white p-6 sm:p-8 shadow-sm transition hover:shadow-md hover:-translate-y-0.5 reveal-delayed">
+              <div class="flex items-center justify-between">
+                <h2 class="text-xl sm:text-2xl font-semibold">Admin portal</h2>
+                <span class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-amber-500 text-white">→</span>
+              </div>
+              <p class="mt-2 text-zinc-600">Monitor bookings, revenue, and fleet insights in one place.</p>
+              <div class="mt-4 inline-flex items-center text-amber-600 font-medium">Open admin<span class="ml-1 transition-transform group-hover:translate-x-0.5">→</span></div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="benefits" class="bg-white py-14 sm:py-16">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="grid sm:grid-cols-3 gap-6">
+            <div class="rounded-xl border border-zinc-200 bg-white p-6 shadow-sm reveal">
+              <h3 class="text-lg font-semibold">Nationwide coverage</h3>
+              <p class="mt-1 text-zinc-600">Pick up and drop off in major cities and regional hubs across Australia.</p>
+            </div>
+            <div class="rounded-xl border border-zinc-200 bg-white p-6 shadow-sm reveal-delayed">
+              <h3 class="text-lg font-semibold">Transparent pricing</h3>
+              <p class="mt-1 text-zinc-600">Clear rates and no surprise fees, with simple insurance options.</p>
+            </div>
+            <div class="rounded-xl border border-zinc-200 bg-white p-6 shadow-sm reveal">
+              <h3 class="text-lg font-semibold">24/7 support</h3>
+              <p class="mt-1 text-zinc-600">Local assistance whenever you need it, wherever you are.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-zinc-50 py-10">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="rounded-xl border border-zinc-200 bg-white p-6 sm:p-7 shadow-sm flex flex-wrap items-center justify-between gap-4 reveal">
+            <div class="text-zinc-700">Trusted by 50k+ drivers nationwide</div>
+            <div class="flex items-center gap-4 text-sm text-zinc-600">
+              <span>4.8/5 average rating</span>
+              <span class="hidden sm:inline h-4 w-px bg-zinc-200"></span>
+              <span>No hidden fees</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="border-t border-zinc-200 bg-white">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
+        <div class="flex flex-col sm:flex-row items-center justify-between gap-4 text-sm">
+          <div class="text-zinc-600">© <span id="year"></span> AusDrive</div>
+          <div class="flex items-center gap-6">
+            <a href="#" class="text-zinc-600 hover:text-sky-800 transition-colors">Privacy</a>
+            <a href="#" class="text-zinc-600 hover:text-sky-800 transition-colors">Terms</a>
+            <a href="#" class="text-zinc-600 hover:text-sky-800 transition-colors">Support</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
