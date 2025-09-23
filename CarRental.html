@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Car Rental Service</title>
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <header class="bg-white shadow-md" >
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-blue-600">Matee Car Rentals</h1>
+      <nav class="space-x-6">
+        <a href="#home" class="hover:text-blue-600">Home</a>
+        <a href="#about" class="hover:text-blue-600">About us</a>
+        <a href="#cars" class="hover:text-blue-600">Cars</a>
+        <a href="#contact" class="hover:text-blue-600">Contact us</a>
+      </nav>
+      <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">Sign In</a>
+    </div>
+  </header>
+
+  <section id ="home"class="relative bg-cover bg-center h-[70vh] bg-[url('cars.png')]">
+    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+      <div class="text-center text-white px-6">
+        <h2 class="text-4xl md:text-6xl font-bold mb-4">Drive Your Dream Car Today</h2>
+        <p class="mb-6 text-lg">Affordable. Reliable. Convenient.</p>
+        <a href="#booking" class="bg-blue-600 px-6 py-3 rounded-lg text-lg font-semibold hover:bg-blue-700">Book Now</a>
+      </div>
+    </div>
+  </section>
+
+
+ <section id="booking" class="max-w-4xl mx-auto bg-white shadow-lg rounded-xl p-8 relative mt-10 mb-10">
+    <h3 class="text-2xl font-bold mb-6 text-center">Book Your Car</h3>
+    <form action="#" method="POST" class="grid md:grid-cols-2 gap-6">
+      
+      <div>
+        <label for="car" class="block mb-2 font-medium">Select Car</label>
+        <select id="car" name="car" class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500">
+        </select>
+      </div>
+
+      <div>
+        <label for="location" class="block mb-2 font-medium">Pickup Location</label>
+        <input type="text" id="location" name="location" placeholder="e.g. lahore Airport" class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500">
+      </div>
+
+      <div>
+        <label for="pickup-date" class="block mb-2 font-medium">Pickup Date</label>
+        <input type="date" id="pickup-date" name="pickup-date" class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500">
+      </div>
+
+      <div>
+        <label for="dropoff-date" class="block mb-2 font-medium">Dropoff Date</label>
+        <input type="date" id="dropoff-date" name="dropoff-date" class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500">
+      </div>
+
+      <div class="md:col-span-2 flex justify-center">
+        <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">Search Cars</button>
+      </div>
+    </form>
+  </section>
+
+
+<section id="about" class="py-16 bg-gray-100">
+  <div class="container mx-auto px-6 lg:px-20 text-center">
+    <h2  class="text-4xl font-bold text-gray-800 mb-6">About Us</h2>
+    <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-10">
+      At <span class="font-semibold text-indigo-600">Matee Car Rentals</span>, we provide reliable, affordable, and
+      flexible car rental solutions across Australia. Whether you’re traveling for business, a family holiday, or a weekend
+      getaway, our fleet of modern vehicles ensures you enjoy the journey as much as the destination.
+    </p>
+    <div class="grid gap-8 md:grid-cols-3">
+      
+      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold text-gray-800 mb-3">Our Mission</h3>
+        <p class="text-gray-600">
+          To make car rentals simple, transparent, and accessible while delivering exceptional customer service.
+        </p>
+      </div>
+     
+      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold text-gray-800 mb-3">Our Vision</h3>
+        <p class="text-gray-600">
+          To be Australia’s most trusted car rental service, known for quality, affordability, and reliability.
+        </p>
+      </div>
+    
+      <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold text-gray-800 mb-3">Our Values</h3>
+        <p class="text-gray-600">
+          Integrity, customer satisfaction, and innovation drive everything we do, ensuring the best rental experience.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Why Choose Us -->
+<section class="py-16 bg-gray-50">
+  <div class="max-w-6xl mx-auto px-6 lg:px-20 text-center">
+    <h2 class="text-4xl font-bold text-gray-800 mb-6">Why Choose Us?</h2>
+    <p class="text-lg text-gray-600 mb-12">We go the extra mile to make your journey smooth and enjoyable.</p>
+
+    <div class="grid gap-10 md:grid-cols-3">
+      <!-- Affordable Prices -->
+      <div class="bg-white rounded-xl shadow p-6 hover:shadow-lg transition">
+        <div class="text-indigo-600 text-5xl mb-4">💲</div>
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">Affordable Prices</h3>
+        <p class="text-gray-600">Competitive rates with no hidden charges.</p>
+      </div>
+
+      <!-- 24/7 Support -->
+      <div class="bg-white rounded-xl shadow p-6 hover:shadow-lg transition">
+        <div class="text-indigo-600 text-5xl mb-4">📞</div>
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">24/7 Support</h3>
+        <p class="text-gray-600">We’re here to help you anytime, anywhere.</p>
+      </div>
+
+      <!-- Easy Booking -->
+      <div class="bg-white rounded-xl shadow p-6 hover:shadow-lg transition">
+        <div class="text-indigo-600 text-5xl mb-4">⚡</div>
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">Easy Booking</h3>
+        <p class="text-gray-600">Fast and simple booking process in just a few clicks.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Fleet Section -->
+<section id="cars" class="py-16 bg-gray-100">
+  <div class="max-w-6xl mx-auto px-6 lg:px-20 text-center">
+    <h2 class="text-4xl font-bold text-gray-800 mb-6">Our Cars</h2>
+    <p class="text-lg text-gray-600 mb-12">
+      Choose vehicles that suit your needs, whether it’s a budget-friendly hatchback or a luxury SUV.
+    </p>
+
+    <div class="grid gap-8 md:grid-cols-2 text-center">
+      <!-- Prius -->
+      <div class="bg-gray-100 rounded-2xl shadow hover:shadow-lg transition overflow-hidden">
+        <div class="w-full h-48 flex items-center justify-center bg-white">
+          <img src="prius.jpg" alt="Toyota Prius" class="max-h-full object-contain">
+        </div>
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold text-gray-800 mb-2">Toyota Prius</h3>
+          <p class="text-gray-600 mb-4">Hybrid efficiency with comfort, perfect for eco-friendly driving.</p>
+          <a href="#booking" class="bg-indigo-600 text-white py-2 px-4 rounded-lg hover:bg-indigo-700">Book Now</a>
+        </div>
+      </div>
+
+      <!-- Camry -->
+      <div class="bg-gray-100 rounded-2xl shadow hover:shadow-lg transition overflow-hidden">
+        <div class="w-full h-48 flex items-center justify-center bg-white">
+            <img src="camry.jpg" alt="Toyota Camry"  class="max-h-full object-contain">
+        </div>
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold text-gray-800 mb-2">Toyota Camry</h3>
+          <p class="text-gray-600 mb-4">Stylish and reliable, the Camry delivers comfort and performance.</p>
+          <a href="#booking" class="bg-indigo-600 text-white py-2 px-4 rounded-lg hover:bg-indigo-700">Book Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Contact Section -->
+<section id="contact" class="py-16 bg-gray-50">
+  <div class="max-w-6xl mx-auto px-6 lg:px-20">
+    <h2 class="text-4xl font-bold text-gray-800 mb-12">Contact Us</h2>
+    
+    <div class="grid md:grid-cols-2 gap-12">
+      
+      <!-- Contact Form -->
+      <form class="bg-white p-8 shadow-lg rounded-xl space-y-6">
+        <div>
+          <label class="block text-gray-700 font-semibold">Name</label>
+          <input type="text" class="w-full mt-2 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+        </div>
+        <div>
+          <label class="block text-gray-700 font-semibold">Email</label>
+          <input type="email" class="w-full mt-2 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+        </div>
+        <div>
+          <label class="block text-gray-700 font-semibold">Message</label>
+          <textarea rows="4" class="w-full mt-2 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
+        </div>
+        <button class="w-full bg-indigo-600 text-white py-3 rounded-lg hover:bg-indigo-700 transition">Send Message</button>
+      </form>
+
+      <!-- Contact Info -->
+      <div class="flex flex-col justify-center space-y-6">
+        <div>
+          <h3 class="text-2xl font-semibold text-gray-800 mb-2">Get in Touch</h3>
+          <p class="text-gray-600">We’re here to help! Reach out to us anytime for bookings or inquiries.</p>
+        </div>
+        <div>
+          <p class="text-gray-700"><strong>📍 Address:</strong> 123 Main Street, Sydney, Australia</p>
+          <p class="text-gray-700"><strong>📞 Phone:</strong> +61 452 018 578</p>
+          <p class="text-gray-700"><strong>✉️ Email:</strong> mateeCarRentals@gmail.com</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-8">
+    <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+      <p>&copy; 2025 MateeCarRentals. All rights reserved.</p>
+      <div class="space-x-4">
+        <a href="#" class="hover:text-blue-400">Facebook</a>
+        <a href="#" class="hover:text-blue-400">Instagram</a>
+        <a href="#" class="hover:text-blue-400">Twitter</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
